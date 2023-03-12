@@ -1,0 +1,23 @@
+nav {
+  background-color: $colornintendo;
+  color: #fff;
+  height: 70px;
+  padding: 0 20px;
+
+  @include center;
+  justify-content: space-between;
+  svg {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: flex;
+    gap: 10px;
+    li {
+      @include centercolumn;
+      gap: 5px;
+    }
+  }
+  div {
+    font-size: 0.8rem;
+  }
+}

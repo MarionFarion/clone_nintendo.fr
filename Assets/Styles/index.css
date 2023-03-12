@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  color: #fff;
+}
+body svg {
+  fill: #fff;
+}
+body li {
+  list-style: none;
+}
+
+nav {
+  background-color: rgb(230, 0, 18);
+  color: #fff;
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav svg {
+  font-size: 1.5rem;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+nav div {
+  font-size: 0.8rem;
+}
+
+menu {
+  position: relative;
+  height: calc(100vh - 70px);
+  background-color: rgb(191, 0, 16);
+  color: #fff;
+  width: 90px;
+  font-size: 0.8rem;
+}
+menu :nth-child(9) {
+  height: 50px;
+}
+menu .corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: rgb(111, 0, 9);
+}
+menu li {
+  background-color: rgb(230, 0, 18);
+  gap: 5px;
+  height: 80px;
+  width: 100%;
+  border-top: solid 1px rgb(207, 0, 0);
+  border-right: solid 1px rgb(207, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+menu li:hover {
+  background-color: rgb(207, 0, 0);
+}
+menu .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+menu .divers {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=index.css.map */
