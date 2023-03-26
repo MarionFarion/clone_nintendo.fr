@@ -1,12 +1,18 @@
 menu {
+  font-family: $font1;
   position: relative;
   height: calc(100vh - 70px);
   background-color: $colorfooter;
   color: #fff;
   width: 90px;
-  font-size: 0.8rem;
+  font-size: 11.2px;
+  line-height: 1;
+  position: fixed;
+  left: 0;
   & :nth-child(9) {
     height: 50px;
+    font-size: 2rem;
+    padding-bottom: 15px;
   }
 
   .corner {
@@ -16,13 +22,13 @@ menu {
     fill: $colorcorner;
   }
   li {
+    position: relative;
     background-color: $colornintendo;
     &:hover {
       background-color: $colorborder;
     }
     gap: 5px;
-    height: 80px;
-
+    height: 90px;
     width: 100%;
     border-top: solid 1px $colorborder;
     border-right: solid 1px $colorborder;
@@ -37,11 +43,43 @@ menu {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  .divers {
-    font-size: 1.5rem;
+
+  @media screen and (max-height: 880px) {
+    > :nth-child(7) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 770px) {
+    > :nth-child(6) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 700px) {
+    > :nth-child(5) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 610px) {
+    > :nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 520px) {
+    > :nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 420px) {
+    > :nth-child(2) {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 335px) {
+    > :nth-child(1) {
+      display: none;
+    }
   }
 }

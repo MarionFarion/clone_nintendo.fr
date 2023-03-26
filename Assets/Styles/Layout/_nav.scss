@@ -1,4 +1,9 @@
 nav {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  width: 100%;
+  font-family: $font1;
   background-color: $colornintendo;
   color: #fff;
   height: 70px;
@@ -8,6 +13,9 @@ nav {
   justify-content: space-between;
   svg {
     font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+    }
   }
   ul {
     display: flex;
@@ -15,9 +23,13 @@ nav {
     li {
       @include centercolumn;
       gap: 5px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
   div {
-    font-size: 0.8rem;
+    font-size: 11.2px;
   }
 }

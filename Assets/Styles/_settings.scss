@@ -34,3 +34,10 @@ body {
     list-style: none;
   }
 }
+
+@font-face {
+  font-family: "font1";
+  src: url(../Fonts/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+$font1: "font1", sans-serif;
