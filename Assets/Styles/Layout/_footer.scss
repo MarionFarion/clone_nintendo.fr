@@ -1,94 +1,110 @@
 footer {
   background-color: #f4f4f4;
-  font-family: $font1;
+
   margin-left: 95px;
   .partage {
-    width: 66.5%;
+    width: 74.58%;
     color: white;
     display: flex;
-    padding: 10px;
-    height: 50px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 150px;
     margin-bottom: 30px;
     background-color: rgb(51, 51, 51);
-    svg {
-      margin-left: 180px;
-      margin-right: 20px;
-    }
-    & span {
-      display: flex;
+    & * {
       align-items: center;
-      margin-right: 150px;
-      font-weight: 800;
-      font-size: 35px;
     }
-    .facebook {
-      cursor: pointer;
-      border-radius: 5px;
+    .block1 {
       display: flex;
-      gap: 5px;
-      align-items: center;
-      background-color: rgb(59, 89, 152);
-      padding-right: 90px;
+      gap: 20px;
+      & span {
+        padding: 0px 5px;
+        display: flex;
+        font-weight: 800;
+        font-size: 34.006px;
+      }
 
-      img {
-        border-radius: 5px;
-        height: 100%;
+      @media screen and (max-whidth: 497px) {
+        & svg {
+          display: none;
+        }
       }
     }
-    .twitter {
-      cursor: pointer;
-      border-radius: 5px;
+    .block2 {
       display: flex;
-      gap: 5px;
-      align-items: center;
-      background-color: rgb(85, 172, 238);
-      padding-right: 100px;
-
-      margin-left: 10px;
-      & img {
+      gap: 10px;
+      font-size: 14px;
+      .facebook {
+        cursor: pointer;
         border-radius: 5px;
-        height: 100%;
+        display: flex;
+        gap: 10px;
+        padding-right: 90px;
+        background-color: rgb(59, 89, 152);
+        img {
+          border-radius: 5px;
+          height: 30px;
+        }
+      }
+      .twitter {
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        gap: 10px;
+        background-color: rgb(85, 172, 238);
+        padding-right: 100px;
+        & img {
+          border-radius: 5px;
+          height: 30px;
+        }
       }
     }
   }
   .footer {
-    width: 66.5%;
-    position: relative;
-    padding-top: 10px;
-    padding-left: 10px;
+    width: 75%;
     background-color: $colornintendo;
-    height: 173px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    & :hover {
-      text-decoration: underline;
-    }
-    .button {
-      cursor: pointer;
+
+    .footerHeader {
       display: flex;
-      position: absolute;
-      top: 5px;
-      right: 20px;
-      color: white;
-      gap: 7px;
-      border: 1px solid $colorfooter;
-      background-color: $colorfooter;
-      padding-top: 6px;
-      padding-bottom: 3px;
-      padding-left: 15px;
-      padding-right: 15px;
-      border-radius: 5px;
-      .country-selector-text {
-        font-size: 12px;
-        font-weight: 800;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px;
+      .button {
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        gap: 10px;
+        color: white;
+        padding: 7px;
+        border: 1px solid $colorfooter;
+        background-color: $colorfooter;
+
+        .country-selector-text {
+          font-size: 12px;
+          font-weight: 800;
+        }
       }
     }
-    .blockFin {
+    .footerBody {
+      width: 100%;
+      background-color: $colorfooter;
+      padding: 10px;
       color: #f4f4f4;
-      display: flex;
-      flex-direction: row;
+      font-size: 12px;
       .info1 {
-        flex-direction: column;
+        display: flex;
+        padding: 10px;
+        gap: 25px;
+      }
+      .info2 {
+        display: flex;
+        padding: 10px;
+        gap: 25px;
+      }
+      .info3 {
+        padding: 10px;
       }
     }
   }

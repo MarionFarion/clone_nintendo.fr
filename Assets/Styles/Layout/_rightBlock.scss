@@ -1,13 +1,12 @@
 .rightBlock {
-  font-family: $font1;
   letter-spacing: 1px;
-  width: 33.5%;
+  width: 25%;
   .red {
     color: red;
   }
   .grid_news {
     margin-top: 8px;
-    margin-left: 6px;
+    margin-left: 5px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: (0.5fr, 1fr * 10, 0.5fr);
@@ -127,6 +126,7 @@
   }
   .treize {
     background-color: white;
+    font-weight: 800;
     margin-bottom: 4px;
     padding: 20px;
     .titre1 {
@@ -194,6 +194,7 @@
   }
   .dixneuf {
     background-color: white;
+    font-weight: 800;
     margin-bottom: 4px;
     padding: 20px;
     .titre1 {

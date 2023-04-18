@@ -20,6 +20,10 @@ body li {
   font-family: "font1";
   src: url(../Fonts/OpenSans-VariableFont_wdthwght.ttf);
 }
+body {
+  font-family: "font1", sans-serif, sans-serif;
+}
+
 nav {
   position: fixed;
   z-index: 100000;
@@ -62,7 +66,6 @@ nav div {
 }
 
 menu {
-  font-family: "font1", sans-serif;
   position: relative;
   height: calc(100vh - 70px);
   background-color: rgb(191, 0, 16);
@@ -154,13 +157,13 @@ menu .top {
 main {
   display: flex;
   margin-top: 70px;
-  margin-left: 93px;
+  margin-left: 94px;
   padding-bottom: 56px;
   background-color: #f4f4f4;
 }
 
 .centralBlock {
-  width: 66.5%;
+  width: 75%;
   color: black;
 }
 .centralBlock .grid_img {
@@ -250,16 +253,15 @@ main {
 }
 
 .rightBlock {
-  font-family: "font1", sans-serif;
   letter-spacing: 1px;
-  width: 33.5%;
+  width: 25%;
 }
 .rightBlock .red {
   color: red;
 }
 .rightBlock .grid_news {
   margin-top: 8px;
-  margin-left: 6px;
+  margin-left: 5px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr, 10fr, 0.5fr;
@@ -375,6 +377,7 @@ main {
 }
 .rightBlock .treize {
   background-color: white;
+  font-weight: 800;
   margin-bottom: 4px;
   padding: 20px;
 }
@@ -441,6 +444,7 @@ main {
 }
 .rightBlock .dixneuf {
   background-color: white;
+  font-weight: 800;
   margin-bottom: 4px;
   padding: 20px;
 }
@@ -467,94 +471,108 @@ main {
 
 footer {
   background-color: #f4f4f4;
-  font-family: "font1", sans-serif;
   margin-left: 95px;
 }
 footer .partage {
-  width: 66.5%;
+  width: 74.58%;
   color: white;
   display: flex;
-  padding: 10px;
-  height: 50px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 150px;
   margin-bottom: 30px;
   background-color: rgb(51, 51, 51);
 }
-footer .partage svg {
-  margin-left: 180px;
-  margin-right: 20px;
-}
-footer .partage span {
-  display: flex;
+footer .partage * {
   align-items: center;
-  margin-right: 150px;
+}
+footer .partage .block1 {
+  display: flex;
+  gap: 20px;
+}
+footer .partage .block1 span {
+  padding: 0px 5px;
+  display: flex;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 34.006px;
 }
-footer .partage .facebook {
+@media screen and (max-whidth: 497px) {
+  footer .partage .block1 svg {
+    display: none;
+  }
+}
+footer .partage .block2 {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+footer .partage .block2 .facebook {
   cursor: pointer;
   border-radius: 5px;
   display: flex;
-  gap: 5px;
-  align-items: center;
-  background-color: rgb(59, 89, 152);
+  gap: 10px;
   padding-right: 90px;
+  background-color: rgb(59, 89, 152);
 }
-footer .partage .facebook img {
+footer .partage .block2 .facebook img {
   border-radius: 5px;
-  height: 100%;
+  height: 30px;
 }
-footer .partage .twitter {
+footer .partage .block2 .twitter {
   cursor: pointer;
   border-radius: 5px;
   display: flex;
-  gap: 5px;
-  align-items: center;
+  gap: 10px;
   background-color: rgb(85, 172, 238);
   padding-right: 100px;
-  margin-left: 10px;
 }
-footer .partage .twitter img {
+footer .partage .block2 .twitter img {
   border-radius: 5px;
-  height: 100%;
+  height: 30px;
 }
 footer .footer {
-  width: 66.5%;
-  position: relative;
-  padding-top: 10px;
-  padding-left: 10px;
+  width: 75%;
   background-color: rgb(230, 0, 18);
-  height: 173px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-footer .footer :hover {
-  text-decoration: underline;
-}
-footer .footer .button {
-  cursor: pointer;
+footer .footer .footerHeader {
   display: flex;
-  position: absolute;
-  top: 5px;
-  right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+footer .footer .footerHeader .button {
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
   color: white;
-  gap: 7px;
+  padding: 7px;
   border: 1px solid rgb(191, 0, 16);
   background-color: rgb(191, 0, 16);
-  padding-top: 6px;
-  padding-bottom: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 5px;
 }
-footer .footer .button .country-selector-text {
+footer .footer .footerHeader .button .country-selector-text {
   font-size: 12px;
   font-weight: 800;
 }
-footer .footer .blockFin {
+footer .footer .footerBody {
+  width: 100%;
+  background-color: rgb(191, 0, 16);
+  padding: 10px;
   color: #f4f4f4;
-  display: flex;
-  flex-direction: row;
+  font-size: 12px;
 }
-footer .footer .blockFin .info1 {
-  flex-direction: column;
+footer .footer .footerBody .info1 {
+  display: flex;
+  padding: 10px;
+  gap: 25px;
+}
+footer .footer .footerBody .info2 {
+  display: flex;
+  padding: 10px;
+  gap: 25px;
+}
+footer .footer .footerBody .info3 {
+  padding: 10px;
 }/*# sourceMappingURL=index.css.map */

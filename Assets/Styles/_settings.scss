@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 @mixin center {
   display: flex;
   justify-content: center;
@@ -41,3 +42,7 @@ body {
 }
 
 $font1: "font1", sans-serif;
+
+body {
+  font-family: $font1, sans-serif;
+}
